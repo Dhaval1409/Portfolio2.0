@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>PLAYGROUND</title>
+</head>
+<body>
+
+    <section id="home" class="hero-section">
+        <div class="video-background">
+            <div class="video-loading">
+                <div class="loading-spinner"></div>
+                <p>Loading...</p>
+            </div>
+            <video autoplay muted loop playsinline id="heroVideo">
+                <source src="public/videos/hero-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="cyber-grid">
+            <div class="hero-content">
+                <h1 class="glitch-text">WELCOME TO MY PLAYGROUND</h1>
+                <p class="neon-text"> Full-Stack Developer | Digital Artist | Dhaval</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="cyber-button">View Projects</a>
+                    <a href="#contact" class="cyber-button outline">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="section-title glitch-text">Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <!-- project img here  in future -->
+                </div>
+                <div class="project-content">
+                    <h3>Project Title</h3>
+                    <p>Project Description</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for future project ideas -->
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2 class="section-title glitch-text">Tech Powers</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3 class="neon-text">Frontend</h3>
+                <ul class="skill-list">
+                    <li>HTML5 / CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React.js</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3 class="neon-text">Backend</h3>
+                <ul class="skill-list">
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3 class="neon-text">Tools</h3>
+                <ul class="skill-list">
+                    <li>Git</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title glitch-text">Initialize Connection</h2>
+        <div class="contact-container">
+            <form class="cyber-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="cyber-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="public/js/main.js"></script>
+</body>
+
+</html>
